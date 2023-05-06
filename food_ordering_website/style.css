@@ -1,0 +1,274 @@
+* {
+    margin: 0;
+    padding: 0;
+    font-family: 'Sigmar', cursive;
+}
+
+#navbar {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    font-weight: bold;
+}
+
+#navbar::before {
+    content: "";
+    background-color: lightcoral;
+    width: 100%;
+    top: 0px;
+    height: 49px;
+    position: absolute;
+    z-index: -1;
+    opacity: 0.4;
+}
+
+#navbar ul {
+    display: flex;
+}
+
+/* navbar k andar ul aur uske andar li  */
+#navbar ul li {
+    list-style: none;
+    /* text-decoration: none; */
+}
+
+#navbar ul li a {
+    display: block;
+    text-decoration: none;
+    /* top: 2px; */
+    padding: 15px 11px;
+    color: black;
+
+}
+
+#navbar ul li a:hover {
+    background-color: black;
+    color: lightcoral;
+    border-radius: 4px;
+    transition-property: background-color;
+    transition-duration: 0.8s;
+    text-decoration: overline;
+    border-radius: 4px;
+}
+
+#home {
+    display: flex;
+    flex-direction: column;
+    padding: 3px 200px;
+    justify-content: center;
+    align-items: center;
+    height: 298px;
+}
+
+/* as we are using pseudo selector so we made section of #home again */
+#home::before {
+    content: "";
+    background-image: url('static/chopping-board-gbd936bbcf_1920.jpg');
+    background-size: 100%;
+    /* background-position: ; */
+    /* backgroun */
+    width: 100%;
+    height: 100%;
+    /* margin: 40px 0px; */
+    z-index: -1;
+    position: absolute;
+}
+
+#home h1 {
+    text-align: center;
+}
+
+#home p {
+    font-size: 25px;
+    text-align: center;
+}
+
+.btn {
+    margin: 9px;
+    padding: 5px 13px;
+    background-color: rgba(59, 155, 59, 0.812);
+    border-radius: 4px;
+    cursor: pointer;
+    position: relative;
+    top: 50px;
+}
+
+.btn:hover {
+    background-color: rgba(47, 183, 47, 0.962);
+    border-radius: 6px;
+}
+
+.h-primary {
+    font-size: 2.8rem;
+    padding: 26px;
+    height: 100px;
+}
+
+.services-container {
+    top: 180px;
+    position: relative;
+    justify-items: center;
+    align-items: center;
+    background-color: lightcoral;
+    height: 555px;
+}
+
+.h-primary center {
+    font-size: 2.8rem;
+    padding: 12px;
+    /* display: inline-block; */
+}
+
+.services {
+    margin: 0px 260px;
+    display: flex;
+
+
+}
+
+.item1 {
+    text-decoration: none;
+    border: 2px solid black;
+    display: flexbox;
+    width: 330px;
+    height: 100px;
+    text-align: center;
+    border-radius: 20px;
+    height: 364px;
+    margin: 0px 5px;
+    background-color: grey;
+    transition-property: background-color;
+    transition-duration: 0.8s;
+}
+
+.item1:hover {
+    text-decoration: none;
+    background-color: black;
+    color: lightcoral;
+}
+
+.services img {
+    margin: 16px;
+    width: 200px;
+    height: 200px;
+    /* justify-content: center;
+    align-items: center; */
+}
+
+/* .services-container services */
+.center {
+    text-align: center;
+}
+
+.box {
+    font-size: 20px;
+}
+
+#clients {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding: 0px 0px 0px 0px;
+}
+
+.client-section {
+    height: 400px;
+    margin: 180px 0px;
+}
+
+.client-section::before {
+    content: "";
+    position: absolute;
+    background: url('static/zigzag-lines-g3b5cf7a1a_640.png');
+    width: 100%;
+    height: 380px;
+    z-index: -1;
+    opacity: 0.4;
+}
+
+.l-primary {
+
+    padding: 30px 0px 0px 0px;
+    font-size: 2.8rem;
+    margin: 28px 0px;
+}
+
+.client-item {
+    text-align: center;
+}
+
+.client-item img {
+    width: 126px;
+    height: 115px;
+    padding: 20px 20px;
+}
+
+/* .c-primary{
+
+} */
+.contact-section {
+    margin: -200px 0px;
+
+}
+
+.contact-section::before {
+    content: "";
+    position: absolute;
+    background: url('static/flowers-g6e90e9573_640.jpg');
+    width: 100%;
+    height: 400px;
+    z-index: -1;
+    opacity: 0.4;
+}
+
+#contactbox {
+    display: flex;
+    justify-content: center;
+    text-align: center;
+    font-size: 22px;
+}
+
+#contactbox input {
+    border-radius: 4px;
+}
+
+.form-group {
+    flex-direction: column;
+    padding: 0px 120px 0px 0px;
+    height: 20px;
+    width: 20px;
+}
+
+.btn1 {
+    /* margin: 0px 0px;
+    padding: 0px 0px; */
+    padding: 5px 13px;
+    background-color: rgb(6 6 183 / 78%);
+    border-radius: 4px;
+    cursor: pointer;
+    position: relative;
+    top: 122px;
+}
+
+.btn1:hover {
+    background-color: rgba(44, 44, 177, 0.778);
+    border-radius: 6px;
+}
+
+footer {
+    font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+    color: lightcoral;
+    top: 419px;
+    position: relative;
+
+}
+
+footer::before {
+    content: "";
+    width: 100%;
+    height: 40px;
+    background-color: black;
+    z-index: -1;
+    position: absolute;
+    /* top: 200px; */
+}
